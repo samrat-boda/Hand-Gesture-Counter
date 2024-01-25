@@ -16,6 +16,10 @@ A specific area in each frame, known as the Region of Interest (ROI), is defined
 ## 3)Calculate Extreme Points:
 
 Identify the most outward points in the hand's contour using cv2.convexHull.
+
+![image](https://github.com/samrat-boda/Hand-Gesture-Counter/assets/88550792/09569cca-650d-40eb-b0c5-d51384c96a62)
+
+
 ## 4)Estimate Hand Center:
 
 Find the center of the hand by calculating the intersection of the extreme points.
@@ -34,6 +38,9 @@ For the initial 60 frames, the program calculates the average background using c
 ## 9)Hand Segmentation and Visualization:
 
 After background subtraction, the program identifies and draws contours around the segmented hand, displays the finger count, and shows a binary thresholded image for visualizing hand features, all within the specified ROI. This involves using cv2.absdiff, cv2.threshold, and cv2.findContours.
+![image](https://github.com/samrat-boda/Hand-Gesture-Counter/assets/88550792/bece9c57-d2ff-48b2-86cf-32ec100e885e)
+
+
 ## Setup and Requirements
 
 OpenCV: Ensure you have OpenCV installed. You can install it using:
